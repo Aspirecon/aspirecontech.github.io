@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AspireCon Tech</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2E3A59;
+      --accent: #F29544;
+      --bg: #f9f9f9;
+      --text: #333;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      background-color: #e4e7ec;
+      padding: 0.75rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--primary);
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .team-grid, .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--primary);
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      header, nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="AspireCon Tech Logo">
+    <h1>AspireCon Tech</h1>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#team">Team</a>
+    <a href="#gallery">Projects</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Inspired by the enduring strength of The Great Pyramid, AspireCon Tech’s mission is to build an enlightened, sustainable future through landmark real estate development. With deep roots in Mumbai’s construction industry since 1968, we have delivered over 2 million sq. ft. across more than 50 iconic projects. Our foundation lies in integrity, innovation, and a commitment to quality that spans generations.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Iconic real estate development</li>
+      <li>Design-thinking driven project management</li>
+      <li>Tech-enabled construction SOPs</li>
+      <li>Structural engineering & sustainable design</li>
+      <li>Client-centric, value-engineered solutions</li>
+    </ul>
+  </section>
+
+  <section id="team">
+    <h2>Leadership</h2>
+    <div class="team-grid">
+      <div class="card">
+        <h3>Akash Shah</h3>
+        <p>MS (Georgia Tech), B.Tech (VJTI)</p>
+        <p>A JN Tata Scholar and real estate strategist, Akash brings tech-driven, cost-optimized project leadership to AspireCon Tech. He has led Fortune 500 projects and government infrastructure developments across India.</p>
+      </div>
+      <div class="card">
+        <h3>Vishal Shah</h3>
+        <p>MS (University of Illinois), BE (Mumbai Univ.)</p>
+        <p>Vishal combines global real estate experience with a strong local presence. His leadership fosters innovation and drives AspireCon Tech toward impactful, sustainable urban development.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Featured Projects</h2>
+    <div class="gallery-grid">
+      <div class="card">
+        <h3>Crown Building (Aman NY)</h3>
+        <p>New York City, USA<br>Luxury Hotel & Residences<br>400,000 sq.ft.</p>
+      </div>
+      <div class="card">
+        <h3>Auden Upstate</h3>
+        <p>South Carolina, USA<br>Luxury Student Housing<br>375,000 sq.ft.</p>
+      </div>
+      <div class="card">
+        <h3>Happyville Clubhouse</h3>
+        <p>Kolkata, India<br>Clubhouse Design<br>75,000 sq.ft.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 AspireCon Tech. Built with integrity.
+  </footer>
+
+</body>
+</html>
